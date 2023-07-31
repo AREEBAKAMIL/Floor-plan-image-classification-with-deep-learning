@@ -38,11 +38,24 @@ The training accuracy (in blue) gets close to 100% whereas the validation accura
 3. Resize the images - The images that go into convnet are 150x150 colour images
 4. Normalize the pixel values to be in the [0, 1] range (originally all values are in the [0, 255] range).
 5. Train on all 1000 images available, for 15 epochs, and validate on all 500 validation images.
-6. Visualizing the intermediate representations to get a feel for what kind of features our convnet has learned. Tthe raw pixels of the images become increasingly abstract and compact representations
+6. Visualizing the intermediate representations to get a feel for what kind of features our convnet has learned. The raw pixels of the images become increasingly abstract and compact representations
 7. Evaluating Accuracy and Loss for the model by plotting the training/validation accuracy and loss as collected during training
 
 
 # 3. Binary Image Classification Optimized
+This is an optimized version of the previous Binary Image classifier. I have used the following optimization techniques:
+1. Data augmentation: A technique of artificially increasing the training set by creating modified copies of a dataset using existing data. 
+2. Dropout regularization: It is a regularization technique for reducing overfitting. The term “dropout” refers to dropping out the nodes (input and hidden layer) in a neural network. Dropout simulates a sparse activation from a given layer, which interestingly, in turn, encourages the network to actually learn a sparse representation as a side-effect.
+3. Train on all 1000 images available, for 30 epochs, and validate on all 500 validation images.
+   
+## Results:
+The training accuracy (in blue) and validation accuracy (in orange) both are close to 95%.
+
+## Steps
+1. "Augment" the training data via a number of random transformations, so that at training time, the model will never see the exact same picture twice. This helps prevent overfitting and helps the model generalize better.
+2. Add the data-augmentation transformations from to the data preprocessing configuration.
+3. Reconfigure our convnet architecture from the previous model to add some dropout, right before the final classification layer.
+4. Evaluating Accuracy and Loss for the model by plotting the training/validation accuracy and loss as collected during training
 
 # 4. Multi-class Image Classification
 
