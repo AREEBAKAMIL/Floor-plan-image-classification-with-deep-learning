@@ -6,6 +6,7 @@ In this project, I developed a binary classification model and a multi-class cla
  - 'notfloorplan' include typed documents, handwritten documents and documents containing tabular data.
 
 The dataset used is data I have collected from various UK-based property web pages. 
+Link to dataset: https://drive.google.com/drive/folders/1lV-JuHDwk-xFDv5zehjhq4Y5C1gCOlaS?usp=sharing
 
 For Binary classification, the data consists of 1500 images in total as follows:
 - total training floorplans images: 500
