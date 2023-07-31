@@ -5,12 +5,15 @@ In this project, I developed a binary classification model and a multi-class cla
  - 'Floorplans' include digitally drawn floorplans and hand-drawn floorplans
  - 'notfloorplan' include typed documents, handwritten documents and documents containing tabular data.
 
-The dataset used is data I have collected from various UK-based property web pages. The data consists of 1500 images in total as follows:
+The dataset used is data I have collected from various UK-based property web pages. 
 
+For Binary classification, the data consists of 1500 images in total as follows:
 - total training floorplans images: 500
 - total training notfloorplans images: 500
 - total validation floorplans images: 250
 - total validation notfloorplans images: 250
+
+For Multi-cass classification, the data consists of XX images in total as follows:
 
 # 1. Project background, problem statement, and solution overview
 
